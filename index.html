@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +6,18 @@
     <title>Robert Hill, King of Folk release</title>
     <style>
         body {
-            font-family: Impact, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: flex-start; /* Justera innehållet nära toppen */
             background-color: black;
             color: white;
             text-align: center;
             min-height: 100vh;
-            padding-top: 20px;
-            position: relative; /* För att positionera kontaktinformationen */
+            padding-top: 20px; /* Lägg till lite avstånd från toppen */
         }
         h1 {
             margin: 5px 0;
@@ -42,9 +40,9 @@
         }
         .icon-links {
             display: flex;
-            flex-direction: column;
+            flex-direction: column; /* Ikoner under varandra som standard */
             align-items: center;
-            gap: 20px;
+            gap: 20px; /* Avstånd mellan ikoner */
             margin-top: 10px;
         }
         .icon-link {
@@ -58,22 +56,6 @@
         }
         .icon-link img:hover {
             transform: scale(1.1);
-        }
-        /* Kontaktuppgifter längst ner till höger */
-        .contact-info {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            font-size: 0.9rem;
-            color: white;
-            text-align: right;
-        }
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-        }
-        .contact-info a:hover {
-            text-decoration: underline;
         }
 
         /* Responsiv design */
@@ -97,7 +79,7 @@
                 font-size: 1rem;
             }
             .icon-links {
-                gap: 15px;
+                gap: 15px; /* Justera mellanrummet mellan ikoner */
             }
         }
     </style>
@@ -116,9 +98,6 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
         </a>
     </div>
-    <!-- Kontaktinformation -->
-    <div class="contact-info">
-        <p>Contact: <a href="mailto:muskogeemusic@gmail.com">muskogeemusic@gmail.com</a></p>
-    </div>
 </body>
 </html>
+
