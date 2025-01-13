@@ -25,11 +25,10 @@
         h2 {
             margin: 10px 0;
             font-size: 1.3rem;
-			
         }
         .image-container {
-            width: 800px;
-            height: auto;
+            width: 90%;
+            max-width: 800px;
             margin: 20px 0;
         }
         .image-container img {
@@ -38,11 +37,15 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        .icon-link {
+        .icon-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin-top: 10px;
-            display: inline-block;
-            width: 60px;
-            height: 60px;
+        }
+        .icon-link {
+            width: 50px;
+            height: 50px;
         }
         .icon-link img {
             width: 100%;
@@ -52,6 +55,28 @@
         .icon-link img:hover {
             transform: scale(1.1);
         }
+
+        /* Responsiv design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+            .icon-link {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -60,11 +85,13 @@
     <div class="image-container">
         <img src="DSC_4403.jpg" alt="Stor bild som inspirerar">
     </div>
-    <a href="https://open.spotify.com/artist/6QWxYboS9UMC3nklM301fB" target="_blank" class="icon-link">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
-    </a>
-    <a href="https://www.youtube.com/@muskogeefew" target="_blank" class="icon-link">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
-    </a>
+    <div class="icon-links">
+        <a href="https://open.spotify.com/artist/6QWxYboS9UMC3nklM301fB" target="_blank" class="icon-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+        </a>
+        <a href="https://www.youtube.com/@muskogeefew" target="_blank" class="icon-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+        </a>
+    </div>
 </body>
 </html>
