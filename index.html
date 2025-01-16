@@ -6,7 +6,6 @@
     <title>Robert Hill, King of Folk</title>
     <style>
         body {
-            
             margin: 0;
             padding: 0;
             display: flex;
@@ -60,6 +59,27 @@
             transform: scale(1.1);
         }
 
+        .shop-button-container {
+            margin-top: -10px; /* Flytta upp knapparna */
+        }
+
+        .shop-button, .about-button {
+            display: inline-block;
+            background-color: #a0a0a0; /* Grå Färg */
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            font-family: Lucida Console;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px; /* Litet mellanrum mellan knappar */
+        }
+
+        .shop-button:hover, .about-button:hover {
+            background-color: #e65500; /* Mörkare orange vid hover */
+        }
+
         /* Responsiv design */
         @media (max-width: 768px) {
             h1 {
@@ -100,6 +120,11 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
         </a>
     </div>
+    <!-- Knapp för webbshop -->
+    <div class="shop-button-container">
+        <a href="shop.html" target="_blank" class="shop-button">Merch</a>
+        <!-- Knapp för About -->
+        <a href="about.html" class="about-button">Images</a>
+    </div>
 </body>
 </html>
-
