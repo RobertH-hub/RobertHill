@@ -10,8 +10,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             min-height: 100vh;
         }
@@ -61,6 +61,12 @@
             visibility: visible;
             opacity: 1;
         }
+        .footer {
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -74,6 +80,9 @@
     </div>
     <div class="fullscreen" id="fullscreen" onclick="hideFullscreen()">
         <img id="fullscreenImg" src="" alt="Förstorad bild">
+    </div>
+    <div class="footer">
+        Photos by Mark Szantai & Imre Gera
     </div>
     <script>
         function showFullscreen(img) {
