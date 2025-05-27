@@ -21,12 +21,14 @@
       justify-content: center;
       align-items: center;
       padding: 20px;
+      width: 100%;
     }
 
     .product {
       text-align: center;
-      width: 400px;
-      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
       background: rgba(255, 255, 255, 0.9);
       border-radius: 15px;
       box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
@@ -41,6 +43,7 @@
 
     .product img {
       width: 100%;
+      height: auto;
       border-radius: 10px;
       border: 4px solid black;
     }
@@ -67,6 +70,8 @@
       justify-content: center;
       align-items: center;
       z-index: 1000;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
     .overlay .content {
@@ -74,7 +79,7 @@
       padding: 20px;
       border-radius: 10px;
       text-align: center;
-      width: 90%;
+      width: 100%;
       max-width: 500px;
     }
 
@@ -114,11 +119,32 @@
       color: white;
       cursor: pointer;
     }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 480px) {
+      .product {
+        padding: 15px;
+      }
+
+      .overlay .content {
+        padding: 15px;
+      }
+
+      .close {
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+      }
+
+      .info-text {
+        font-size: 0.75em;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="product" onclick="showOverlay('vinyl.jpg', 'King of Folk, LP Record, Limited Edition', 'King of Folk 33 RPM, By Robert Hill')">
+    <div class="product" onclick="showOverlay('vinyl.jpg', 'King of Folk, LP Record, Limited Edition', 'King of Folk 33 RPM, y Robert Hill')">
       <img src="vinyl.jpg" alt="King of Folk LP" />
       <p>King of Folk LP</p>
       <p>€20.00</p>
